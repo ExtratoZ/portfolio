@@ -1,5 +1,6 @@
 import Title from '../../Components/Title';
 import Paragraph from '../../Components/Paragraph';
+import { GitSection } from './styles';
 
 const About = () => {
   return (
@@ -14,6 +15,16 @@ const About = () => {
         comprometido em aplicar meus conhecimentos em HTML, CSS, JavaScript e
         frameworks modernos para construir soluções digitais de qualidade.
       </Paragraph>
+      <GitSection>
+        <img
+          src="https://github-readme-stats.vercel.app/api?username=ExtratoZ&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"
+          alt=""
+        />
+        <img
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=ExtratoZ&layout=compact&langs_count=7&theme=dracula"
+          alt=""
+        />
+      </GitSection>
     </section>
   );
 };
