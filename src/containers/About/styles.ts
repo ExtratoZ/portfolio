@@ -3,6 +3,7 @@ import style from 'styled-components';
 export const GitSection = style.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
+  row-gap: 14px;
   margin-top: 32px;
   margin-bottom: 64px;
 

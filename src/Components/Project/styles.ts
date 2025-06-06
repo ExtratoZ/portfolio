@@ -1,16 +1,20 @@
 import styled from 'styled-components';
 
 export const Card = styled.div`
-  border: 1px solid #c1c1c1;
+  border: 1px solid ${(props) => props.theme.colorBorder};
   padding: 16px;
 `;
 
 export const LinkButton = styled.a`
   display: inline-block;
-  color: #fff;
+  color: #eee;
   font-size: 14px;
-  background-color: #4476bf;
+  background-color: ${({ theme }) => theme.colorBackgroundButton};
   text-decoration: none;
   padding: 8px;
   margin-top: 24px;
+  cursor: pointer;
+  &:hover {
+    background-color: ${({ theme }) => theme.colorButtonHover};
+  }
 `;
